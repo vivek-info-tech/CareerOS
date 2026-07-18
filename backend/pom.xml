@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.careeros</groupId>
+    <artifactId>careeros-backend</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>CareerOS Backend</name>
+    <description>Parent Maven Project for CareerOS Microservices</description>
+
+    <!-- Spring Boot Parent -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.4</version>
+        <relativePath/>
+    </parent>
+
+    <modules>
+        <module>common</module>
+        <module>auth-service</module>
+        <module>api-gateway</module>
+
+        <!-- Future Services -->
+        <!--
+        <module>user-service</module>
+        <module>job-service</module>
+        <module>resume-service</module>
+        <module>ats-service</module>
+        <module>notification-service</module>
+        <module>config-server</module>
+        <module>discovery-service</module>
+        -->
+    </modules>
+
+    <properties>
+        <java.version>21</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
